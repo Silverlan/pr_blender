@@ -1,0 +1,29 @@
+import sys;
+import bpy;
+bpy.ops.import_scene.fbx(
+	filepath=sys.argv[0],
+	directory='',
+	filter_glob='*.fbx',
+	files=None,
+	ui_tab='MAIN',
+	use_manual_orientation=False,
+	global_scale=1.0,
+	bake_space_transform=False,
+	use_custom_normals=True,
+	use_image_search=True,
+	use_alpha_decals=False,
+	decal_offset=0.0,
+	use_anim=True,
+	anim_offset=1.0,
+	use_subsurf=False,
+	use_custom_props=True,
+	use_custom_props_enum_as_string=True,
+	ignore_leaf_bones=False,
+	force_connect_children=False,
+	automatic_bone_orientation=False,
+	primary_bone_axis='Y',
+	secondary_bone_axis='X',
+	use_prepost_rot=True,
+	axis_forward='-Z',
+	axis_up='Y'
+)

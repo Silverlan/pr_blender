@@ -1,0 +1,30 @@
+import sys;
+import bpy;
+bpy.ops.wm.collada_import(
+	filepath=sys.argv[0],
+	filter_blender=False,
+	filter_backup=False,
+	filter_image=False,
+	filter_movie=False,
+	filter_python=False,
+	filter_font=False,
+	filter_sound=False,
+	filter_text=False,
+	filter_archive=False,
+	filter_btx=False,
+	filter_collada=True,
+	filter_alembic=False,
+	filter_usd=False,
+	filter_volume=False,
+	filter_folder=True,
+	filter_blenlib=False,
+	filemode=8,
+	display_type='DEFAULT',
+	sort_method='',
+	import_units=False,
+	fix_orientation=False,
+	find_chains=False,
+	auto_connect=False,
+	min_chain_length=0,
+	keep_bind_info=False
+)
