@@ -1,0 +1,11 @@
+OpenShadingLanguage 1.00
+# Compiled by oslc 1.11.14
+# options: -q -O2 -IE:/projects/blender_dll/intern/cycles/kernel/osl/shaders -IE:/projects/blender_dll/../lib/win64_vc15/osl/share/OSL/shaders -o E:/projects/build_windows_Bpy_x64_vc16_Release/intern/cycles/kernel/osl/shaders/node_output_volume.oso
+volume node_output_volume
+param	closure color	Volume			%read{0,0} %write{2147483647,-1}
+global	closure color	Ci	%read{2147483647,-1} %write{0,0}
+code ___main___
+# E:/projects/blender_dll/intern/cycles/kernel/osl/shaders/node_output_volume.osl:21
+#   Ci = Volume;
+	assign		Ci Volume 	%filename{"E:/projects/blender_dll/intern/cycles/kernel/osl/shaders/node_output_volume.osl"} %line{21} %argrw{"wr"}
+	end
